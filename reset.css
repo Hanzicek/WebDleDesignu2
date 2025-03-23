@@ -1,0 +1,37 @@
+/*reset.css*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    font-size: 100%; /* Nastavení 16px jako výchozí velikost */
+    line-height: 1.5;
+  }
+  
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  input, button, textarea, select {
+    font: inherit; /* Dědí font z rodiče */
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit; /* Zachová barvu z rodiče */
+  }
+  
+  ul, ol {
+    list-style: none; /* Odstraní puntíky a číslování */
+  }
+  
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  

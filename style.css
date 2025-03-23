@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+    max-width: 90%;
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 20rem;
+    border-radius: 0.625rem;
+}
+
+.features {
+    text-align: center;
+    padding: 2rem;
+    max-width: 90%;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.feature-item img {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    width: 90%;
+    text-align: center;
+}
+
+.description img {
+    width: 100%;
+    max-width: 40rem;
+    border-radius: 0.625rem;
+}
+
+.text-box {
+    background: #f8f8f8;
+    padding: 1.5rem;
+    border-radius: 0.625rem;
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
+    margin-top: 1rem;
+    max-width: 90%;
+}
+
+@media (min-width: 48rem) {
+    .gallery {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .features {
+        max-width: 60%;
+    }
+
+    .feature-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+    }
+
+    .description {
+        flex-direction: row;
+        text-align: left;
+        align-items: flex-start;
+    }
+    
+    .description img {
+        width: 50%;
+        margin-right: 1.5rem;
+    }
+    
+    .text-box {
+        flex: 1;
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 90rem) { /* 1440px */
+    .gallery {
+        max-width: 70%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .gallery img {
+        max-width: 25rem;
+    }
+    
+    .features {
+        max-width: 50%;
+    }
+    
+    .feature-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 3rem;
+    }
+    
+    .description {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 70%;
+        padding: 3rem 0;
+    }
+    
+    .description img {
+        max-width: 45%;
+    }
+    
+    .text-box {
+        max-width: 50%;
+        padding: 2rem;
+        font-size: 1.125rem;
+    }
+}
